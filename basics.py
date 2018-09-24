@@ -117,4 +117,4 @@ def find_n_th(sentence,substr,pos):
             sentence = sentence[start_pos:]
         return count+sentence.find(substr)
 
-pos = find_n_th(sentence,substr,2)
+pos = find_n_th(sentence,'is',2)
