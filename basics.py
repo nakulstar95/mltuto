@@ -118,3 +118,19 @@ def find_n_th(sentence,substr,pos):
         return count+sentence.find(substr)
 
 pos = find_n_th(sentence,'is',2)
+
+
+def getEvenNumbers(n):
+    '''n is range of numbers in which we return even numbers'''
+    if type(n) != int:
+        output = 'please enter integer as input'
+    else:
+        # output = list(filter(lambda x: x%2 ==0 , list(range(n))))
+        output = []
+        for i in range(n):
+            if i%2 == 0:
+                output.append(i)
+            else:
+                pass
+    return output
+getEvenNumbers(10)
